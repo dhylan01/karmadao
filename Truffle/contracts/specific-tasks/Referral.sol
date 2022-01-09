@@ -1,8 +1,9 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./Karma.sol";
+import "../interfaces/ITask.sol";
 
-contract Referral is Karma {
+contract Referral is ITask {
 
     //function for first task completion that calls referalls or an if statement checked eveyrtime a user completes a task
     //function for referalls that will check the numbers of sucessful referals a user has and then reward if necesary
@@ -25,19 +26,19 @@ contract Referral is Karma {
     
 
     // TODO: finish this
-    function genRefCode(address user) returns (uint8) {
-        // referralTasks
-    }
+    // function genRefCode(address user) public returns (uint8) {
+    //     // referralTasks
+    // }
 
     // TODO; finish this
-    function referralCheck(uint8 refId) internal {
-    //should be fine since only calling this function on first task completion
-        if ( userReferals[refId] != 0) {
-           userReferalCount[msg.sender] ++;
+    // function referralCheck(uint8 refId) internal {
+    // //should be fine since only calling this function on first task completion
+    //     if ( userReferals[refId] != 0) {
+    //        userReferalCount[msg.sender] ++;
            
-           //call mint function to give tokens
-        }
-    }
+    //        //call mint function to give tokens
+    //     }
+    // }
     
     
 

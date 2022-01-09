@@ -1,8 +1,9 @@
-const ConvertLib = artifacts.require("ConvertLib");
-const MetaCoin = artifacts.require("MetaCoin");
+const Karma = artifacts.require("Karma");
+const Org = artifacts.require("Org");
+const Treasury = artifacts.require("Treasury");
 
-module.exports = function(deployer) {
-  deployer.deploy(ConvertLib);
-  deployer.link(ConvertLib, MetaCoin);
-  deployer.deploy(MetaCoin);
+module.exports = function (deployer) {
+  deployer.deploy(Karma);
+  // deployer.link(ConvertLib, MetaCoin);
+  deployer.deploy(Treasury);
 };
