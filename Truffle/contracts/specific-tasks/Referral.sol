@@ -16,6 +16,7 @@ contract Referral is ITask {
         referralTasks = Tasks(
             {
                 title: "Referrals",
+                //move to off-chain
                 description: "Refer KarmaDAO to 5 friends and win some sweet KARMA",
                 reward: 5,
                 client: msg.sender
